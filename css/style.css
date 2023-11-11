@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     background-color: black;
     margin: 0;
@@ -18,7 +22,6 @@ h1, h2, h3 {
     grid-template-columns: 1.5fr 3fr;
     grid-template-rows: 1fr auto-fit;
     font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
 }
 
@@ -168,3 +171,50 @@ input {
     border-bottom: 1px solid #28363D;
 }
 
+@media (width > 767px) {
+    #main-container {
+        margin: 0;
+    }
+
+    #sidebar {
+        padding-left: 1rem;
+    }
+}
+
+@media (width > 1023px) {
+
+    #main-container {
+        grid-template-columns: .75fr 3fr;
+        grid-template-rows: 1fr auto-fit;
+    }
+
+    #header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #header form {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #header form input {
+        width: 15rem;
+    }
+
+    #top-right-header {
+    grid-column: 2 / 3;
+        gap: 1%;
+    }
+
+    #main-content {
+        grid-template-columns: 3fr .75fr;
+    }
+
+    #announcements-container {
+        grid-template-rows: 5% 95% 
+    }
+
+    
+
+}
