@@ -4,6 +4,11 @@ body {
     padding: 0;
 }
 
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
 #main-container {
     height: auto;
     width: 100vw;
@@ -11,7 +16,7 @@ body {
     margin: 2%;
     display: grid;
     grid-template-columns: 1.5fr 3fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr auto-fit;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -42,6 +47,8 @@ a {
 }
 
 #sidebar {
+    position: sticky;
+    top: 0px;
     z-index: 101;
     display: grid;
     height: 100%;
@@ -51,12 +58,14 @@ a {
     background-color: #6D9197;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    height: 100vh;
 }
 
 #header {
     z-index: 100;
     background-color: #2F575D;
     display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-content: start;
     padding: 2%;
@@ -68,6 +77,17 @@ form {
     grid-template-columns: .5fr 3fr 3fr;
     gap: 1rem;
     height: 3rem;
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 #header label span {
@@ -99,7 +119,7 @@ input {
 }
 
 #main-content {
-    background-color: none;
+    background-color: transparent;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto-fit, auto-fit);
@@ -107,9 +127,44 @@ input {
     padding: 1rem;
 }
 
+#card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
 .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     background-color: #C4CDC1;
+    border-left: .7rem solid #658B6F;
     box-shadow: .1rem .1rem .2rem #28363D;
     border-radius: .6rem;
     padding: 1rem;
 }
+
+.card-icons {
+    justify-self: end;
+}
+
+#announcements-container, #updates-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#announcements-inner-container, #updates-inner-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    background-color: #C4CDC1;
+    padding: .5rem;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem .2rem #28363D;
+}
+
+.announcement, .update {
+    border-bottom: 1px solid #28363D;
+}
+

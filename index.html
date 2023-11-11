@@ -31,72 +31,149 @@
         </div>
             <div id="header">
                 <div id="top-right-header">
-                    <div id="notifications"><span class="material-symbols-rounded">notifications</span></div>
+                    <button id="notifications-button">
+                        <div id="notifications"><span class="material-symbols-rounded">notifications</span></div>
+                    </button>
                     <div id="avatar"><img src="images/wizard.jpeg" alt="a hooded wizard with glowing eyes"></div>
                     <div id="user-name">Wizard Cloakman</div>
                 </div>
                 <form action="" method="get">
                     <label for="search">
-                        <span class="material-symbols-rounded">search</span>
+                        <button>
+                            <span class="material-symbols-rounded">search</span>
+                        </button>
                     </label>
                     <input type="search" name="search" id="search">
                 </form>
             </div>
         <div id="main-content">
-            <div class="card" id="next-session">
-                <div class="card-title"><h2>Next Session</h2></div>
-                <div class="card-content">November 14th, 2023
+            <div id="card-container">
+                <div class="card" id="next-session">
+                    <div class="card-title"><h3>Next Session</h3></div>
+                    <div class="card-content">November 14th, 2023
+                    </div>
                     <div class="card-icons">
-                        <span class="material-symbols-rounded">star</span>
-                        <span class="material-symbols-rounded">edit_note</span>
-                        <span class="material-symbols-rounded">share</span>
+                        <button class="star"><span class="material-symbols-rounded">star</span></button>
+                        <button class="edit"><span class="material-symbols-rounded">edit_note</span></button>
+                        <button class="share"><span class="material-symbols-rounded">share</span></button>
+                    </div>
+                </div>
+                <div class="card" id="to-do">
+                    <div class="card-title"><h3>Pre-Session To-Do</h3></div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Level up</li>
+                            <li>Read exploration rules</li>
+                            <li>Look over notes</li>
+                        </ul>
+                    </div>
+                    <div class="card-icons">
+                        <button class="star"><span class="material-symbols-rounded">star</span></button>
+                        <button class="edit"><span class="material-symbols-rounded">edit_note</span></button>
+                        <button class="share"><span class="material-symbols-rounded">share</span></button>
+                    </div>
+                </div>
+                <div class="card" id="lorem-one">
+                    <div class="card-title"><h3>Lorem One</h3></div>
+                    <div class="card-content">
+                        <p>
+                            What happened magic untrap how are you doing
+                            today Look!. Fire shield cold Southwall Gate
+                            birdslain enemy you deceived me. Trap! March
+                            KAAOS Dark demi-gods listen to my laughter.
+                        </p>
+                    </div>
+                    <div class="card-icons">
+                        <button class="star"><span class="material-symbols-rounded">star</span></button>
+                        <button class="edit"><span class="material-symbols-rounded">edit_note</span></button>
+                        <button class="share"><span class="material-symbols-rounded">share</span></button>
+                    </div>
+                </div>
+                <div class="card" id="lorem-two">
+                    <div class="card-title"><h3>Lorem Two</h3></div>
+                    <div class="card-content">
+                        <p>
+                            I found it i am your servant him, his your heart
+                            is that of the lion. You're welcome Undead Lords
+                            UDL are you finished Sea elf. You are beautiful
+                            this he had too much wine mead ale Swordmaster.
+                        </p>
+                    </div>
+                    <div class="card-icons">
+                        <button class="star"><span class="material-symbols-rounded">star</span></button>
+                        <button class="edit"><span class="material-symbols-rounded">edit_note</span></button>
+                        <button class="share"><span class="material-symbols-rounded">share</span></button>
                     </div>
                 </div>
             </div>
-            <div class="card" id="to-do">
-                <div class="card-title"><h2>Pre-Session To-Do</h2></div>
-                <div class="card-content">
-                    <ul>
-                        <li>Level up</li>
-                        <li>Read exploration rules</li>
-                        <li>Look over notes</li>
-                    </ul>
-                    <div class="card-icons">
-                        <span class="material-symbols-rounded">star</span>
-                        <span class="material-symbols-rounded">edit_note</span>
-                        <span class="material-symbols-rounded">share</span>
+            <div id="announcements-container">
+                <h2>Announcements</h2>
+                <div id="announcements-inner-container">
+                    <div class="announcement">
+                        <div class="announcement-title">
+                            <h3>Site Maintenance</h3>
+                        </div>
+                        <div class="announcement-content">
+                            <p>
+                                The site will be temporarily down for maintenance
+                                on your mom's birthday. Get it?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="announcement">
+                        <div class="announcement-title">
+                            <h3>Software Changes</h3>
+                        </div>
+                        <div class="announcement-content">
+                            <p>
+                                Earthquake magic trap Spring Festival agility.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="announcement">
+                        <div class="announcement-title">
+                            <h3>Date Change</h3>
+                        </div>
+                        <div class="announcement-content">
+                            <p>
+                                Fire Field Westbridge Dwarf Bridge help me! mirror image.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card" id="lorem-one">
-                <div class="card-title"><h2>Lorem One</h2></div>
-                <div class="card-content">
-                    <p>
-                        What happened magic untrap how are you doing 
-                        today Look!. Fire shield cold Southwall Gate 
-                        birdslain enemy you deceived me. Trap! March 
-                        KAAOS Dark demi-gods listen to my laughter.
-                    </p>
-                    <div class="card-icons">
-                        <span class="material-symbols-rounded">star</span>
-                        <span class="material-symbols-rounded">edit_note</span>
-                        <span class="material-symbols-rounded">share</span>
+            <div id="updates-container">
+                <h2>Recent Updates</h2>
+                <div id="updates-inner-container">
+                    <div class="update">
+                        <div class="update-title">
+                            <span class="material-symbols-rounded">data_info_alert</span><h3>Pretty Good Updates</h3>
+                        </div>
+                        <div class="update-content">
+                            <p>
+                                That one guy did something pretty funny.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card" id="lorem-two">
-                <div class="card-title"><h2>Lorem Two</h2></div>
-                <div class="card-content">
-                    <p>
-                        I found it i am your servant him, his your heart 
-                        is that of the lion. You're welcome Undead Lords 
-                        UDL are you finished Sea elf. You are beautiful 
-                        this he had too much wine mead ale Swordmaster.
-                    </p>
-                    <div class="card-icons">
-                        <span class="material-symbols-rounded">star</span>
-                        <span class="material-symbols-rounded">edit_note</span>
-                        <span class="material-symbols-rounded">share</span>
+                    <div class="update">
+                        <div class="update-title">
+                            <span class="material-symbols-rounded">data_info_alert</span><h3>Another Good One</h3>
+                        </div>
+                        <div class="update-content">
+                            <p>
+                                Somebody updated their whatever.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="update-title">
+                            <span class="material-symbols-rounded">data_info_alert</span><h3>Oh Shit! There's One More?!</h3>
+                        </div>
+                        <div class="update-content">
+                            <p>
+                                And this one's just nuts...like...whoa
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
